@@ -17,4 +17,4 @@ How to start this project: Create one or more TicketMachine objects.
 48. If you do >= 0 then if u insert 0 it will accept the amount since it's between the accepted range. And it accepts 0 as an insertMoney.
 49. Once you add 0 as a value it works. Weird...
 50.
-51. 
+52. A ticket doesn't get printed nor is there a error message.
