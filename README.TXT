@@ -13,3 +13,4 @@ It is discussed in chapter 2.
 Purpose of project: To illustrate conditional statements.
 How to start this project: Create one or more TicketMachine objects.
 
+47. I'm predicting that it will request for a higher number to put in the machine. I was right the number needs to be greater then 0
