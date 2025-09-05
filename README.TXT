@@ -18,3 +18,6 @@ How to start this project: Create one or more TicketMachine objects.
 49. Once you add 0 as a value it works. Weird...
 50.
 52. A ticket doesn't get printed nor is there a error message.
+53. No since once I ticket is printed and if there is a sufficient amount in the balance it will set the balance back to 0 after the ticket is printed such as said on the printTicket method.
+55. saving = price * discount
+56. mean = total / count

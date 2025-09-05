@@ -43,6 +43,16 @@ public class TicketMachine
     {
         return balance;
     }
+    
+    public void affordable(int budget)
+    {
+        if(budget < price) {
+            System.out.println("Too expensive.");
+        }
+        else {
+            System.out.println("Just right.");
+        }
+    }
 
     /**
      * Receive an amount of money from a customer.
@@ -51,10 +61,10 @@ public class TicketMachine
     public void insertMoney(int amount)
     {
         if(amount > 0) {
-            System.out.println("Use a positive amount rather than: " + amount);
+            balance = balance + amount;
         }
         else {
-            balance = balance + amount;
+            System.out.println("Use a positive amount rather than: " + amount);
         }
     }
 
@@ -78,6 +88,10 @@ public class TicketMachine
             total = total + price;
             // Reduce the balance by the price.
             balance = balance - price;
+        }
+        else {
+            System.out.printf("You must insert at least %d more cents.%n",
+                              price - balance);
         }
     }
 
