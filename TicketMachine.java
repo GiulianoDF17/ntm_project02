@@ -35,6 +35,13 @@ public class TicketMachine
     {
         return price;
     }
+    
+    public int emptyMachine()
+    {
+        int amountEmptied = total;
+        total = 0;
+        return amountEmptied;
+    }
 
     /**
      * Return The amount of money already inserted for the next ticket.
